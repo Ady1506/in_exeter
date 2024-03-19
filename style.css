@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f4ee;
+    font-family: "Poppins", sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 30px;
+    height: 10vh;
+    color: #0e595a;
+    padding-right: 50px;
+    background-color: #f5f4ee;
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    display: flex;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.in{
+background-color: #0e595a;
+letter-spacing: 4px;
+color: white;
+padding: 10px;
+border-bottom-left-radius: 20px;
+}
+.exeter{
+    background-color: #0e595a;
+    color: white;
+    letter-spacing: 4px;
+    padding: 10px;
+    border-top-right-radius: 20px;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap:4rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+li{
+    font-size: 1rem;
+    display: flex;
+    font-weight: 500;
+}
+
+.option i{
+    font-size: 1.2rem;
+    margin-left: 9px;
+    align-items: center;
+    color: #0e595a;
+    justify-content: center;
+    align-items: center;
+    margin-block: auto;
+    transition: all 0.6s ease;
+
+}
+.option:hover i{
+    transform: rotate(180deg);
+}
+.search{
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+.search {
+    background-color: #ec6749;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    border-radius: 50%;
+    display: flex;
+    width: 52px; 
+    height: 52px;
+    padding: 9px;
+    transition: all 0.3s ease;
+}
+.search i{
+    margin: auto;
+    color: white;
+}
+.search:hover{
+    background-color: #4f4360;
+    transform: scale(1.1);
+ 
+
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px;
+    flex-direction: column;
+    height: 100vh; /* added */
+    box-sizing: border-box;
+}
+.title{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #0e595a;
+    text-align: center;
+}
+.inexeter{
+    margin-top: 3.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #0e595a;
+}
+.business{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #526ab0 ;
+}
+.improvement{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #ec6749 ;
+}
+.district{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #eca005;
+}
+.info{
+    color: #0e595a;
+    margin:1rem;
+    font-weight: 450;
+}
+.ourproject{
+    all: unset;
+    margin:1rem;
+    font-weight: 600;
+    border-bottom: 3px solid black;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+.ourproject:hover{
+    background-color: #0e595a;
+    color: white;
+    border: transparent;
+    transform: rotate(-10deg);
+}
+.arrow {
+    margin-top: 3rem;
+    font-size: 3rem;
+    font-weight: 300;
+    object-fit: contain;
+    transform: scaleX(0.8);
+    transform: scaleY(1.2);
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.arrow i {
+    margin: auto;
+    color: #b9dfe3;
+    display: flex;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    animation: moveUpDown 1s linear infinite; 
+}
+.detail{
+    padding: 50px;
+}
+.partition{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+.city{
+    flex: 0.8;
+    padding-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.citytitle{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.citydot{
+    color: #fad3cd;
+}
+.cityinfo{
+    margin-top: 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.buttonabout{
+    margin-top:2rem;
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    font-size: .8rem;
+    border: 2px solid black;
+}
+.aboutthebid{
+    all: unset;
+    margin-top:2rem;
+    font-size: 1rem;
+    border: 2px solid black;
+    padding: 10px;
+    
+    transition: all 0.3s ease;
+}
+.aboutbid{
+    padding: 4px;
+    padding-right: 0.5rem;
+    border-right: 2px solid black;
+}
+.aboutthebid i{
+    margin-left: 0.5rem;
+    padding: 4px;
+    transition: all 0.3s ease;
+}
+.aboutthebid:hover{
+    background-color: #0e595a;
+    border: white;
+    color: white;
+}
+.aboutthebid:hover span{
+    border-color: white;
+}
+.aboutthebid:hover i{
+    transform: rotate(360deg);
+}
+.citypics{
+    flex:1.2;
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: row;
+}
+.cityleft{
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    height: 100%;
+    gap: 3rem;
+}
+.circle{
+    border-radius: 50%;
+    width: 60%;
+    aspect-ratio: 1/1;
+    background-color: #ec6749;
+}
+.citydown{
+    width: 80%;
+    height: 60%;
+    border-top-right-radius: 30%;
+    background-image: url('images/concert.jpg');
+    background-size: cover;
+}
+
+.cityright{
+    display: flex;
+    flex-direction: column;
+    width:60%;
+    height: 100%;
+    gap: 3rem;
+    padding-right: 30px;
+}
+.cityup{
+    flex: 45%;
+    background-image: url(images/people.jpg);
+    background-size: cover;
+    border-bottom-right-radius:100% ;
+    margin-left: 10%;
+}
+.semi{
+    flex: 55%;
+    background-color: #fad3cd;
+    border-top-left-radius: 30%;
+}
